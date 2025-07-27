@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Alpha Web3 Talent Marketplace</title>
+    <meta name="description" content="Transparent pricing for Web3 talent marketplace. No hidden fees, competitive rates, and flexible payment options.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+    <!-- Background Pattern -->
+    <div class="page-background">
+        <div class="bg-gradient"></div>
+        <div class="bg-pattern"></div>
+    </div>
+    
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">ALPHA</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="pricing.html" class="active">Pricing</a>
+                    <a href="register.html">Join</a>
+                </nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Pricing Hero Section -->
+        <section class="pricing-hero-section">
+            <div class="container">
+                <div class="pricing-hero-content animate-on-scroll">
+                    <h1 class="pricing-hero-title">
+                        <span class="title-white">Simple, Transparent</span>
+                        <span class="title-gradient">Pricing</span>
+                    </h1>
+                    <p class="pricing-hero-description">
+                        No hidden fees, no surprises. Pay only when you successfully complete projects or hire talent.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Plans Section -->
+        <section class="pricing-plans-section">
+            <div class="container">
+                <div class="pricing-toggle animate-on-scroll">
+                    <div class="toggle-container">
+                        <span class="toggle-label">For Freelancers</span>
+                        <button class="pricing-toggle-btn" id="pricingToggle">
+                            <div class="toggle-slider"></div>
+                        </button>
+                        <span class="toggle-label">For Clients</span>
+                    </div>
+                </div>
+                
+                <!-- Freelancer Pricing -->
+                <div class="pricing-grid freelancer-pricing active" id="freelancerPricing">
+                    <div class="pricing-card basic animate-on-scroll-left">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Basic</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">10%</span>
+                                <span class="price-period">service fee</span>
+                            </div>
+                            <p class="pricing-subtitle">Perfect for getting started</p>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Access to all projects</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Smart contract escrow</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Crypto payments</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Basic support</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Profile verification</span>
+                            </div>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="register.html" class="btn btn-secondary">Get Started</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card pro featured animate-on-scroll">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Pro</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">7%</span>
+                                <span class="price-period">service fee</span>
+                            </div>
+                            <p class="pricing-subtitle">For experienced freelancers</p>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Everything in Basic</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Priority project matching</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Advanced analytics</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Priority support</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Custom portfolio showcase</span>
+                            </div>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="register.html" class="btn btn-primary">Start Pro Trial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card enterprise animate-on-scroll-right">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Enterprise</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">5%</span>
+                                <span class="price-period">service fee</span>
+                            </div>
+                            <p class="pricing-subtitle">For top-tier professionals</p>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Everything in Pro</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Exclusive high-value projects</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Dedicated account manager</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>White-glove onboarding</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Custom contract terms</span>
+                            </div>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="contact.html" class="btn btn-secondary">Contact Sales</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Client Pricing -->
+                <div class="pricing-grid client-pricing" id="clientPricing">
+                    <div class="pricing-card basic animate-on-scroll-left">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Starter</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">5%</span>
+                                <span class="price-period">project fee</span>
+                            </div>
+                            <p class="pricing-subtitle">Perfect for small projects</p>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Post unlimited projects</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Access to all freelancers</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Smart contract escrow</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Basic support</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Project management tools</span>
+                            </div>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="post-project.html" class="btn btn-secondary">Post Project</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card pro featured animate-on-scroll">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Business</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">3%</span>
+                                <span class="price-period">project fee</span>
+                            </div>
+                            <p class="pricing-subtitle">For growing companies</p>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Everything in Starter</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Priority freelancer matching</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Advanced project analytics</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Priority support</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Team collaboration tools</span>
+                            </div>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="post-project.html" class="btn btn-primary">Start Business</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card enterprise animate-on-scroll-right">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Enterprise</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">Custom</span>
+                                <span class="price-period">pricing</span>
+                            </div>
+                            <p class="pricing-subtitle">For large organizations</p>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Everything in Business</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Dedicated talent sourcing</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Custom integrations</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Dedicated account manager</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>SLA guarantees</span>
+                            </div>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="contact.html" class="btn btn-secondary">Contact Sales</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="pricing-faq-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">
+                        <span class="title-white">Frequently Asked</span>
+                        <span class="title-gradient">Questions</span>
+                    </h2>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item animate-on-scroll-left">
+                        <h3 class="faq-question">When are fees charged?</h3>
+                        <p class="faq-answer">Fees are only charged when a project is successfully completed and payment is released from escrow.</p>
+                    </div>
+                    
+                    <div class="faq-item animate-on-scroll-right">
+                        <h3 class="faq-question">What payment methods do you accept?</h3>
+                        <p class="faq-answer">We support 50+ cryptocurrencies including ETH, USDC, DAI, and major DeFi tokens.</p>
+                    </div>
+                    
+                    <div class="faq-item animate-on-scroll-left">
+                        <h3 class="faq-question">Are there any hidden fees?</h3>
+                        <p class="faq-answer">No hidden fees. Our pricing is completely transparent with no surprise charges.</p>
+                    </div>
+                    
+                    <div class="faq-item animate-on-scroll-right">
+                        <h3 class="faq-question">Can I change my plan anytime?</h3>
+                        <p class="faq-answer">Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script>
+        // Pricing toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggle = document.getElementById('pricingToggle');
+            const freelancerPricing = document.getElementById('freelancerPricing');
+            const clientPricing = document.getElementById('clientPricing');
+            
+            toggle.addEventListener('click', function() {
+                toggle.classList.toggle('active');
+                
+                if (toggle.classList.contains('active')) {
+                    freelancerPricing.classList.remove('active');
+                    clientPricing.classList.add('active');
+                } else {
+                    freelancerPricing.classList.add('active');
+                    clientPricing.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Alpha Web3 Talent Marketplace</title>
+    <meta name="description" content="Get in touch with Alpha's support team. We're here to help with any questions about our Web3 talent marketplace.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+    <!-- Background Pattern -->
+    <div class="page-background">
+        <div class="bg-gradient"></div>
+        <div class="bg-pattern"></div>
+    </div>
+    
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">ALPHA</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <a href="register.html">Join</a>
+                </nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Contact Hero Section -->
+        <section class="contact-hero-section">
+            <div class="container">
+                <div class="contact-hero-content animate-on-scroll">
+                    <h1 class="contact-hero-title">
+                        <span class="title-white">Get in</span>
+                        <span class="title-gradient">Touch</span>
+                    </h1>
+                    <p class="contact-hero-description">
+                        Have questions? We're here to help. Reach out to our team and we'll get back to you within 24 hours.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Content Section -->
+        <section class="contact-content-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container animate-on-scroll-left">
+                        <div class="contact-form-header">
+                            <h2 class="contact-form-title">Send us a message</h2>
+                            <p class="contact-form-description">
+                                Fill out the form below and we'll get back to you as soon as possible.
+                            </p>
+                        </div>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input 
+                                        type="text" 
+                                        id="firstName" 
+                                        name="firstName" 
+                                        class="form-input" 
+                                        placeholder="John"
+                                        required
+                                    >
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input 
+                                        type="text" 
+                                        id="lastName" 
+                                        name="lastName" 
+                                        class="form-input" 
+                                        placeholder="Doe"
+                                        required
+                                    >
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    placeholder="john@example.com"
+                                    required
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select id="subject" name="subject" class="form-select" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="billing">Billing Question</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="press">Press Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    class="form-textarea" 
+                                    placeholder="Tell us how we can help you..."
+                                    rows="6"
+                                    required
+                                ></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkbox-custom"></span>
+                                    Subscribe to our newsletter for Web3 updates and platform news
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <span class="btn-text">Send Message</span>
+                                <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info-container animate-on-scroll-right">
+                        <div class="contact-info-card">
+                            <h3 class="contact-info-title">Contact Information</h3>
+                            <p class="contact-info-description">
+                                Reach out to us through any of these channels.
+                            </p>
+                            
+                            <div class="contact-info-list">
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h4>Email</h4>
+                                        <p>support@alpha.com</p>
+                                        <small>We'll respond within 24 hours</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h4>Live Chat</h4>
+                                        <p>Available 24/7</p>
+                                        <small>Click the chat bubble in the bottom right</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <svg fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h4>Discord</h4>
+                                        <p>Join our community</p>
+                                        <small>Get help from our community</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h4>Office</h4>
+                                        <p>San Francisco, CA</p>
+                                        <small>Remote-first company</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-hours-card">
+                            <h4 class="contact-hours-title">Support Hours</h4>
+                            <div class="contact-hours-list">
+                                <div class="hours-item">
+                                    <span class="hours-day">Monday - Friday</span>
+                                    <span class="hours-time">9:00 AM - 6:00 PM PST</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day">Saturday</span>
+                                    <span class="hours-time">10:00 AM - 4:00 PM PST</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day">Sunday</span>
+                                    <span class="hours-time">Closed</span>
+                                </div>
+                            </div>
+                            <div class="contact-note">
+                                <p><strong>Emergency Support:</strong> Available 24/7 for critical issues</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="contact-faq-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">
+                        <span class="title-white">Quick</span>
+                        <span class="title-gradient">Answers</span>
+                    </h2>
+                    <p class="section-description">
+                        Find answers to common questions before reaching out.
+                    </p>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item animate-on-scroll-left">
+                        <h3 class="faq-question">How do I get started on Alpha?</h3>
+                        <p class="faq-answer">Simply create an account, complete your profile, and start browsing projects or posting your own.</p>
+                    </div>
+                    
+                    <div class="faq-item animate-on-scroll-right">
+                        <h3 class="faq-question">What cryptocurrencies do you support?</h3>
+                        <p class="faq-answer">We support 50+ cryptocurrencies including ETH, USDC, DAI, and all major DeFi tokens.</p>
+                    </div>
+                    
+                    <div class="faq-item animate-on-scroll-left">
+                        <h3 class="faq-question">How does the escrow system work?</h3>
+                        <p class="faq-answer">Funds are held in smart contracts and released automatically when project milestones are completed.</p>
+                    </div>
+                    
+                    <div class="faq-item animate-on-scroll-right">
+                        <h3 class="faq-question">Is there a mobile app?</h3>
+                        <p class="faq-answer">Our web platform is fully responsive. A native mobile app is coming soon!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-cta animate-on-scroll">
+                    <p>Still have questions?</p>
+                    <a href="help.html" class="btn btn-secondary">Visit Help Center</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script>
+        // Contact form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                submitBtn.disabled = true;
+                btnText.textContent = 'Sending...';
+                
+                try {
+                    // Simulate API call
+                    await new Promise(resolve => setTimeout(resolve, 2000));
+                    
+                    // Get form data
+                    const formData = new FormData(form);
+                    const contactData = Object.fromEntries(formData.entries());
+                    
+                    console.log('Contact form data:', contactData);
+                    
+                    // Show success message
+                    if (window.AlphaApp && window.AlphaApp.showNotification) {
+                        window.AlphaApp.showNotification('Message sent successfully! We\'ll get back to you within 24 hours.', 'success');
+                    }
+                    
+                    // Reset form
+                    form.reset();
+                    
+                } catch (error) {
+                    console.error('Contact form submission failed:', error);
+                    
+                    if (window.AlphaApp && window.AlphaApp.showNotification) {
+                        window.AlphaApp.showNotification('Failed to send message. Please try again.', 'error');
+                    }
+                } finally {
+                    // Reset button
+                    submitBtn.disabled = false;
+                    btnText.textContent = 'Send Message';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
